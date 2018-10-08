@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.layout .head{
+	height: 80px;
+	position: relative;
+	background-color: #333333;
+	
+}
+.head .logo h2{
+	position:absolute;
+	left: 200px;
+	color: white;
+	line-height:80px;
+}
+.head .right ul{
+	
+	position:absolute;
+	right:180px;	
+}
+.head .right li{
+	float: left;
+	
+}
+.head .right ul li a{
+	margin-left: 10px;
+	color:white;
+	line-height: 80px;
+}
+.head .right ul li a:hover{
+	color: yellow;
+}
+.body .num{
+	position: relative;
+	background-color: #66bb33;
+	height: 300px;
+	width: 100%;
+}
+.body .num ul{
+	position: absolute;
+	right: 180px;
+	bottom: 15px;
+	
+}
+.body .num li{
+	width: 28px;
+	height: 37px;
+	border: #333333 1px solid;
+	margin-left: 10px;
+	/*float:left;*/
+	display: inline-block;
+	vertical-align: bottom;
+	background-color: #b2dd99;
+	text-align: center;
+	
+}
+.body .num li a{
+	
+	line-height: 37px;
+	color: #333333;
+}
+.body .num li:hover{
+	background-color: #e0f1d6;
+	width: 28px;
+	height: 50px;
+	
+}
+.body .area2 .list ul{
+	height: 70px;
+	padding-left:313px;
+	border-bottom:1px solid #cdcdcd;
+}
+.body .area2 .list li{
+	float: left;
+	width: 105px;
+	height: 50px;
+	margin-top: 19px;
+	background:#eeeeee;
+	text-align: center;
+	border:1px solid #cdcdcd;
+	border-top-left-radius: 16px;   
+	border-top-right-radius: 16px; 
+}
+.body .area2 .list li a{
+	font-size:20px;
+	color: black;
+	line-height: 50px;
+}
+.body .area2 .list li:hover,
+.body .area2 .list li.active{
+	background: #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+ #content {
+    width: 1245px;
+    height: 100%;
+    margin: 0 auto;
+            
+}
+#content section{
+	display:flex;
+    flex-wrap: wrap;
+            
+}
+#content div{
+    border: solid 1px #CCCCCC;
+    margin: 5px;
+    padding:80px;
+    text-align: center;
+}
+#content div{
+	flex: 1;
+}
+/*#content div:nth-of-type(1){
+    flex: 1;
+}
+#content div:nth-of-type(2){
+    flex: 1;
+}
+#content div:nth-of-type(3){
+    flex: 1;
+}*/
+.foot{
+           
+    height: 120px;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

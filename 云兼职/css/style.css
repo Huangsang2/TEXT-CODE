@@ -1,0 +1,212 @@
+*{
+	margin:0; padding:0; border:0; list-style: none; 
+	font-size: 29.97px; font-family: "黑体";
+	box-sizing: border-box; 
+	text-decoration: none;
+}
+.layout{
+	width: 750px;
+	background:#f7f7f7; margin: 0 auto;
+}
+.header{
+	width:750px; height: 93px;
+	position: relative;
+	background: #FFFFFF;
+}
+.area{
+	float: left;
+	position:absolute;
+	left:20px; top:30px;
+}
+.srch{
+	display: inline-block;
+	margin-left: 133px;
+	padding-top: 14px;
+	
+}
+.srch input{
+	width:530px; height: 62px;
+	background: url(../img/搜索.png) no-repeat 18px center #eeeeee;
+	border: 1px solid #ffffff ;
+	border-radius: 11px;
+	padding-left: 55px;
+}
+.link{
+	float:right;
+	width: 84px; height: 93px;	
+}
+.link table{
+	width: 100%;
+	height: 100%;
+}
+.slider{
+	position: relative;	
+	overflow: hidden;
+}
+.slider ul{
+	height: auto; width: 999999999px;
+}
+.slider ul li{
+	width: 750px;
+	float:left;
+}
+.slider .num ol{
+	position: absolute;
+	left:300px; bottom: 20px;
+	text-align: center;	
+}
+.slider .num ol li{
+	display: inline-block;
+	width: 24px; height: 4px;
+	background: rgba(255,255,255,0.5);
+}
+.slider ol li.selected{
+	background: #FFFFFF;
+}
+.taber{
+	margin-top: 25px;
+}
+.taber .head{
+	height: 68px; line-height: 68px;/*行高等于高度,垂直方向居中*/
+	background: #FFFFFF;
+	position: relative;
+	padding: 0 60px;
+}
+.taber .head em{
+	position:absolute; left:0px;
+	bottom: 0;width:34px;height: 4px;background: #00a0e9;
+}
+.taber .head:after{
+	content:"";position: absolute; left:0; bottom:0; width: 100%; height: 1px;
+	background:#ececec;
+}
+.taber .head li{
+	float:left;
+	width:33.33%; text-align: center;
+}
+.taber .head li a{
+	color:#b8b8b8;
+}
+.taber .head li.selected a{
+	color: #333333;
+}
+.taber .body{
+	background: #FFFFFF;
+	padding:32px 30px 0px;
+}
+.taber .body ul{
+	height: auto;
+	overflow: hidden;/*清除浮动，当子元素浮动时，给父元素添加overflow：hidden，
+	按照它的第一个特性，应该将子元素超出的部分截掉，但是因为子元素有浮动，无法裁剪，
+	所有只能由父元素增加高度去包裹住子元素，使得父元素拥有了高度，而这个高度是跟随
+	子元素自适应的高度，这样就把浮动的子元素包含在父元素内了。*/
+}
+.taber .body li{
+	width: 345px; height: 142px; float: left;
+	padding-top: 12px;
+}
+.taber .body li:nth-child(even){
+	border-left: 1px solid #ECECEC;
+	padding-left: 40px;
+}
+.taber .body li:nth-child(1){
+	border-bottom: 1px solid #ececec;
+}
+.taber .body li:nth-child(2){
+	border-bottom: 1px solid #ececec;
+}
+.taber .body .ico{
+	float: left;
+}
+.taber .body .txt{
+	float:left;
+}
+.taber .body .txt h3{
+	font-size: 30.13px;
+	line-height: 1.5;
+	color: #333333;
+}
+.taber .body .txt h4{
+	font-size: 27.98px;
+	line-height: 1.5;
+	color: #666666;
+}
+.taber .foot{
+	clear: both;
+	height:67px;
+	line-height: 67px;
+	text-align: center;
+}
+.taber .foot a{
+	padding-right: 40px;
+	background: url(../img/更新圈.png) no-repeat right center;
+	font-size: 26px;
+	color: #333333;
+}
+.list{
+	background: #FFFFFF;
+}
+.list .head{
+	height: 68px; line-height: 68px; position: relative;
+}
+.list .head:after{
+	content:"";position: absolute; left:0; bottom:0;
+	background: #ECECEC; width: 100%;height: 1px;
+}
+.list .head em{
+	background: #00A0E9; height: 35px; width: 5px; 
+	position: absolute; left:34px; top: 17px;
+}
+.list .head h3{
+	display: inline-block; padding-left: 60px;
+}
+.list .body ul li{
+	height: 200px; width: 690px; margin: 0 auto; padding-top:35px;
+	border-bottom: #ECECEC 1px solid;
+	position: relative; 
+}
+.list .body li .circle1{
+	width: 112px; height: 112px; border-radius: 56px ;
+	text-align: center; line-height: 112px;
+	border: #BE4F79 2px solid; color:#be4f79;
+	position: absolute; left:0; top:45px; 
+}
+.list .body li .circle2{
+	width: 112px; height: 112px; border-radius: 56px ;
+	text-align: center; line-height: 112px;
+	border: #62c3c5 2px solid; color:#62c3c5;
+	position: absolute; left:0; top:45px; 
+}
+.list .body li .circle3{
+	width: 112px; height: 112px; border-radius: 56px ;
+	text-align: center; line-height: 112px;
+	border: #d1f091 2px solid; color:#d1f091;
+	position: absolute; left:0; top:45px; 
+}
+.list .body li .txt{
+	padding-left: 180px;
+}
+.list .body li .txt h3{
+	margin-bottom: 25px; 
+}
+.list .body li .txt h3 a{
+	color: #333333;
+}
+.list .body li .txt h4{
+	color: #B8B8B8; background: url(../img/时间.png) no-repeat left center;
+	padding-left:38px; margin-bottom: 15px; font-size: 25.97px;
+}
+.list .body li .txt h5{
+	color: #B8B8B8; background: url(../img/地点.png) no-repeat 3px center;
+	padding-left:38px; font-size: 25.97px;
+}
+.list .body .meta h3{
+	position: absolute; right:0; top: 35px; color:#3bb6ee;
+}
+.list .body .meta .img{
+	position: absolute; bottom: 34px;right: 0;
+}
+.list .body .meta img{
+	width: 32px; height: 32px;margin-right:8px ;
+}
+

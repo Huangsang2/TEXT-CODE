@@ -1,0 +1,257 @@
+*{
+	padding: 0;
+	margin:0;
+	border: 0;
+	list-style-type: none;
+	font-weight: normal;/*字体不加粗*/
+	text-decoration: none;
+	font-family: "黑体";
+	
+}
+body{
+	background:#0d0806;
+}
+.layout{
+	width:750px;
+	margin: 0 auto;
+	font-size: 24px;
+	line-height: 1.7em;
+	color: #B99C63;
+	
+}
+.page1,.page2,.page3{
+	width: 750px; height: 1136px;
+	background: url(../imgs/QQ钱包背景.png) no-repeat center;
+	overflow:hidden;
+	position: relative;
+}
+
+.logo1{
+	text-align: center;
+	margin-top:60px ;
+	line-height:1 ;
+}
+
+
+.page1 .logo2{
+	text-align: center;
+	margin-top: 25px;
+}
+.page1 .list{
+	margin-top:45px;
+	margin-left: 375px;
+	
+}
+.page1 .list ul{
+	border-left:#b99c63 solid 1px;
+	height: 400px;/*把列表限高,用于去除多出来的左边框*/
+}
+.page1 .list li{
+	position:relative;
+	padding-left:40px;
+	margin-bottom:20px;	
+}
+.page1 .list li:nth-child(even){
+	left:-373.67px;
+	padding-right:40px;
+	padding-left: 0px;
+	
+}
+.page1 .list li:nth-child(even) .txt{
+	text-align: right;	
+}
+
+.page1 .list li:nth-child(even) .ico{
+	right:-12.5px; left:auto;
+}
+.page1 .list li .ico{
+	background: url(../imgs/时间轴.png);
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: -12.5px;
+	
+}
+
+.page1 .list li .txt h2{
+	font-size: 24px;
+	line-height: 1;/*行高设为1,相当于字体大小就是行高*/
+}
+.page1 .list li .txt h3{
+	font-size: 24px;
+	line-height: 1.5;
+}
+.page1 .list li .txt h4{
+	font-size: 20px;
+	line-height: 1;
+}
+.page1.active li:nth-child(1) .txt{
+	-webkit-animation:fadeInRight 1s .2s ease both;
+		-moz-animation:fadeInRight 1s .2s ease both;
+}
+.page1.active li:nth-child(2) .txt{
+	-webkit-animation:fadeInLeft 1s .5s ease both;
+		-moz-animation:fadeInLeft 1s .5s ease both;
+}
+.page1.active li:nth-child(3) .txt{
+	-webkit-animation:fadeInRight 1s .8s ease both;
+		-moz-animation:fadeInRight 1s .8s ease both;
+}
+.page1.active li:nth-child(4) .txt{
+	-webkit-animation:fadeInLeft 1s 1.1s ease both;
+		-moz-animation:fadeInLeft 1s 1.1s ease both;
+}.page1.active li:nth-child(5) .txt{
+	-webkit-animation:fadeInRight 1s 1.4s ease both;
+		-moz-animation:fadeInRight 1s 1.4s ease both;
+}
+
+.arrow{
+	
+	position: absolute;
+	bottom: 55px;
+	text-align: center;
+	left:0; right:0;
+	
+}
+
+.active .arrow{
+	-webkit-animation: bounce-up 1.4s linear infinite;
+    animation: bounce-up 1.4s linear infinite;
+}
+.page2 .logo3{
+	text-align:center;
+	margin-top: 23px;
+	line-height:1 ;
+}
+
+.page2 .list2{
+	margin-top:75px;
+	margin-left: 90px;
+}
+.page2 .list2 li{
+	float: left;
+	line-height: 1;
+	margin-right:45px;
+	margin-bottom: 28px;
+}
+.page2.active li:nth-child(1){
+	-webkit-animation: bounceIn 1s 0.5s both;
+                -ms-animation: bounceIn 1s 0.5s both;
+                        animation: bounceIn 1s 0.5s both;
+}
+.page2.active li:nth-child(2){
+	-webkit-animation: bounceIn 1s 0.8s both;
+                -ms-animation: bounceIn 1s 0.8s both;
+                        animation: bounceIn 1s 0.8s both;
+}
+.page2.active li:nth-child(3){
+	-webkit-animation: bounceIn 1s 1.1s both;
+                -ms-animation: bounceIn 1s 1.1s both;
+                        animation: bounceIn 1s 1.1s both;
+}
+.page2.active li:nth-child(4){
+	-webkit-animation: bounceIn 1s 1.4s both;
+                -ms-animation: bounceIn 1s 1.4s both;
+                        animation: bounceIn 1s 1.4s both;
+}
+.page2.active li:nth-child(5){
+	-webkit-animation: bounceIn 1s 1.7s both;
+                -ms-animation: bounceIn 1s 1.7s both;
+                        animation: bounceIn 1s 1.7s both;
+}
+.page2.active li:nth-child(6){
+	-webkit-animation: bounceIn 1s 2.0s both;
+                -ms-animation: bounceIn 1s 2.0s both;
+                        animation: bounceIn 1s 2.0s both;
+}
+.page2.active li:nth-child(7){
+	-webkit-animation: bounceIn 1s 2.3s both;
+                -ms-animation: bounceIn 1s 2.3s both;
+                        animation: bounceIn 1s 2.3s both;
+}
+.page2.active li:nth-child(8){
+	-webkit-animation: bounceIn 1s 2.6s both;
+                -ms-animation: bounceIn 1s 2.6s both;
+                        animation: bounceIn 1s 2.6s both;
+}
+.page2.active li:nth-child(9){
+	-webkit-animation: bounceIn 1s 2.9s both;
+                -ms-animation: bounceIn 1s 2.9s both;
+                        animation: bounceIn 1s 2.9s both;
+}
+
+.page3 .logo4{
+	text-align: center;
+	margin-top: 35px;
+}
+.page3 .phone{
+	display: inline-block;
+	margin-top: 95px;
+	margin-left: 140px;
+	
+}
+.page3 .font1{
+	position:relative;
+	left:70px ;
+	bottom: 85px;
+	display: inline-block;
+	font-size:27.32px;
+	color:#fced9c;
+	line-height: 1.5;
+	font-weight: normal;
+}
+
+
+.page3 .font2{
+	margin-top:115px;
+	margin-left: 115px;
+}
+.page3 .font2 ul{
+	border:2px solid #fdf098;
+	display:inline-block;
+	margin-right:45px;	
+}
+.page3 .font2 li{
+	padding:25px 45px;
+}
+.page3 .font2 a{
+	font-size:30px;
+	color:#fdf098;
+}
+.page3 .font2 a:hover{
+	text-decoration:underline;
+}
+.page3 .font3 p{
+	margin-top: 40px;
+	margin-left: 123px;
+	text-align: left;
+	font-size:24px;
+	color:#947553;
+}
+/*CSS3arrow箭头效果*/
+	@-webkit-keyframes bounce-up {
+    25% {
+        -webkit-transform: translateY(10px);
+    }
+    50%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    75% {
+        -webkit-transform: translateY(-10px);
+    }
+}
+
+@keyframes bounce-up {
+    25% {
+        transform: translateY(10px);
+    }
+    50%, 100% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
